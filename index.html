@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+</head>
+<body>
+  <button id="foo">Open Tab</button>
+  <script>
+  foo.onclick = function() {
+    // Trying to open a new tab
+    // (you can remove or replace "_blank", same behavior)
+    window.open("http://example.com", "_blank");
+
+    // Screen will white out, but show a message to prove we're still here.
+    // Also print out the HTML page contents.
+    setTimeout(function() {
+      alert("But the page is still here!\n"+document.documentElement.innerHTML);
+    }, 500);
+  }
+  </script>
+</body>
+</html>
