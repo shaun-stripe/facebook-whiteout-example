@@ -1,5 +1,12 @@
 The latest Facebook app for android will white-out pages when `window.open`
 is called.  No tab is opened, and the page is still left running and invisible.
+The returned window object for the tab is also blank:
+
+```js
+var tab = window.open("http://example.com", "_blank");
+tab.location.href // => "about:blank"
+tab.closed // => false
+```
 
 To try, start a local server like this:
 
