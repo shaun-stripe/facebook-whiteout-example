@@ -10,4 +10,8 @@ $ ngrok http 8000
 
 Then post a private message on your facebook wall containing your ngrok link
 to try the page and reproduce the issue.  The page will white-out and you
-will see an alert containing the html of the invisible page.
+will see an alert containing the html of the invisible page:
+
+button | alert
+---|---
+![button](screen-button.png) | ![alert](screen-alert.png)
